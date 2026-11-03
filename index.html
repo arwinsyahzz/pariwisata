@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KalaNusantara — Eksplorasi Destinasi & Pesona Lokal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>✨ Tersertifikasi CHSE &bull; Pariwisata Berkelanjutan Indonesia</span>
+            <div class="top-bar-right">
+                <span>🌤️ Cuaca Rata-rata Nusantara: 27&deg;C Cerah Berawan</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#beranda" class="logo">
+                Kala<span>Nusantara</span>.
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#beranda" class="nav-link active">Beranda</a>
+                <a href="#destinasi" class="nav-link">Destinasi Unggulan</a>
+                <a href="#planner" class="nav-link">Rencana Perjalanan</a>
+                <a href="#kuliner" class="nav-link">Kuliner & Eco-Stay</a>
+                <a href="#planner" class="btn btn-primary nav-cta-mobile">Rencanakan Trip</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#planner" class="btn btn-primary nav-cta-desktop">Reservasi Trip</a>
+                <button class="hamburger" id="hamburger" aria-label="Buka Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="badge-cert">
+                <span class="dot"></span> Portal Destinasi Lokal Terkurasi
+            </div>
+            <h1>Temukan Ketenangan di Pelukan Alam Nusantara</h1>
+            <p>Dari kabut pagi di dataran tinggi vulkanik hingga kejernihan perairan koral timur Indonesia. Rancang perjalanan otentik yang menyatu dengan budaya dan kearifan lokal.</p>
+            <div class="hero-actions">
+                <a href="#destinasi" class="btn btn-primary btn-lg">Jelajahi Destinasi</a>
+                <a href="#planner" class="btn btn-glass btn-lg">Asisten Perjalanan AI ✨</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <strong>17.000+</strong>
+                    <span>Pulau Eksotis</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <strong>100%</strong>
+                    <span>Pemandu Lokal</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <strong>4.9/5</strong>
+                    <span>Ulasan Wisatawan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinasi Unggulan Section -->
+    <section id="destinasi" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="sub-title">Eksplorasi Pilihan</span>
+                    <h2>Destinasi Prioritas Nusantara</h2>
+                </div>
+                <p class="section-desc">Pilih kategori lanskap yang paling memanggil jiwa petualang maupun kebutuhan relaksasi Anda.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-tabs" id="filter-tabs">
+                <button class="filter-btn active" data-filter="all">Semua Destinasi</button>
+                <button class="filter-btn" data-filter="pantai">Pantai & Bahari</button>
+                <button class="filter-btn" data-filter="gunung">Gunung & Alam</button>
+                <button class="filter-btn" data-filter="budaya">Warisan Budaya</button>
+            </div>
+
+            <!-- Destination Grid -->
+            <div class="dest-grid" id="dest-grid">
+                <!-- Card 1: Labuan Bajo -->
+                <article class="dest-card" data-category="pantai">
+                    <div class="dest-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=800&q=80" alt="Labuan Bajo" loading="lazy">
+                        <span class="category-tag tag-pantai">Bahari</span>
+                        <div class="weather-pill">☀️ 28&deg;C Cerah</div>
+                    </div>
+                    <div class="dest-body">
+                        <div class="dest-location">Nusa Tenggara Timur</div>
+                        <h3>Kepulauan Padar, Labuan Bajo</h3>
+                        <p>Perpaduan perbukitan savana dramatis dengan tiga gradasi warna pantai dan ekosistem laut kelas dunia.</p>
+                        <div class="dest-footer">
+                            <div class="price-box">
+                                <span>Mulai dari</span>
+                                <strong>Rp 3.450.000<small>/org</small></strong>
+                            </div>
+                            <a href="#planner" class="btn-link">Pilih Rute &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2: Danau Toba -->
+                <article class="dest-card" data-category="gunung">
+                    <div class="dest-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80" alt="Danau Toba" loading="lazy">
+                        <span class="category-tag tag-gunung">Pegunungan</span>
+                        <div class="weather-pill">⛅ 20&deg;C Sejuk</div>
+                    </div>
+                    <div class="dest-body">
+                        <div class="dest-location">Sumatera Utara</div>
+                        <h3>Kaldera Samosir, Danau Toba</h3>
+                        <p>Ketenangan danau vulkanik terbesar di dunia yang dikelilingi bukit pinus dan tradisi Batak yang hangat.</p>
+                        <div class="dest-footer">
+                            <div class="price-box">
+                                <span>Mulai dari</span>
+                                <strong>Rp 2.150.000<small>/org</small></strong>
+                            </div>
+                            <a href="#planner" class="btn-link">Pilih Rute &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3: Borobudur -->
+                <article class="dest-card" data-category="budaya">
+                    <div class="dest-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80" alt="Borobudur Magelang" loading="lazy">
+                        <span class="category-tag tag-budaya">Budaya</span>
+                        <div class="weather-pill">🌤️ 25&deg;C Berawan</div>
+                    </div>
+                    <div class="dest-body">
+                        <div class="dest-location">Jawa Tengah</div>
+                        <h3>Lembah Menoreh & Borobudur</h3>
+                        <p>Menyaksikan matahari terbit di balik stupa bersejarah dan menjelajahi desa wisata gerabah di sekitarnya.</p>
+                        <div class="dest-footer">
+                            <div class="price-box">
+                                <span>Mulai dari</span>
+                                <strong>Rp 1.650.000<small>/org</small></strong>
+                            </div>
+                            <a href="#planner" class="btn-link">Pilih Rute &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4: Raja Ampat -->
+                <article class="dest-card" data-category="pantai">
+                    <div class="dest-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=800&q=80" alt="Raja Ampat" loading="lazy">
+                        <span class="category-tag tag-pantai">Bahari</span>
+                        <div class="weather-pill">☀️ 29&deg;C Cerah</div>
+                    </div>
+                    <div class="dest-body">
+                        <div class="dest-location">Papua Barat Daya</div>
+                        <h3>Laguna Karst Piaynemo, Raja Ampat</h3>
+                        <p>Gugusan pulau karang di atas air biru kehijauan yang menyimpan keanekaragaman hayati terumbu karang terkaya.</p>
+                        <div class="dest-footer">
+                            <div class="price-box">
+                                <span>Mulai dari</span>
+                                <strong>Rp 6.800.000<small>/org</small></strong>
+                            </div>
+                            <a href="#planner" class="btn-link">Pilih Rute &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5: Gunung Bromo -->
+                <article class="dest-card" data-category="gunung">
+                    <div class="dest-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80" alt="Gunung Bromo" loading="lazy">
+                        <span class="category-tag tag-gunung">Pegunungan</span>
+                        <div class="weather-pill">🌬️ 14&deg;C Dingin</div>
+                    </div>
+                    <div class="dest-body">
+                        <div class="dest-location">Jawa Timur</div>
+                        <h3>Taman Nasional Bromo Tengger</h3>
+                        <p>Hamparan lautan pasir berbisik, kawah aktif yang megah, serta keramahan masyarakat adat Suku Tengger.</p>
+                        <div class="dest-footer">
+                            <div class="price-box">
+                                <span>Mulai dari</span>
+                                <strong>Rp 1.450.000<small>/org</small></strong>
+                            </div>
+                            <a href="#planner" class="btn-link">Pilih Rute &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6: Desa Penglipuran & Ubud -->
+                <article class="dest-card" data-category="budaya">
+                    <div class="dest-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Ubud & Desa Adat Bali" loading="lazy">
+                        <span class="category-tag tag-budaya">Budaya</span>
+                        <div class="weather-pill">🌤️ 26&deg;C Nyaman</div>
+                    </div>
+                    <div class="dest-body">
+                        <div class="dest-location">Bali</div>
+                        <h3>Terasering Ubud & Desa Penglipuran</h3>
+                        <p>Harmoni tata ruang desa adat terbersih di dunia dengan lanskap sawah bertingkat sistem pengairan Subak.</p>
+                        <div class="dest-footer">
+                            <div class="price-box">
+                                <span>Mulai dari</span>
+                                <strong>Rp 2.300.000<small>/org</small></strong>
+                            </div>
+                            <a href="#planner" class="btn-link">Pilih Rute &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Travel Planner / AI Assistant -->
+    <section id="planner" class="section planner-section">
+        <div class="container">
+            <div class="planner-wrapper">
+                <div class="planner-info">
+                    <span class="sub-title light">Asisten Cerdas Nusantara</span>
+                    <h2>Rancang Itinerary Impian dengan AI Travel Planner</h2>
+                    <p>Tidak perlu bingung menyusun jadwal. Pilih gaya liburan, durasi, dan suasana yang Anda inginkan—asisten pintar kami akan menyusun rekomendasi rute harian terbaik beserta estimasi anggarannya.</p>
+                    
+                    <form id="planner-form" class="planner-form">
+                        <div class="form-group">
+                            <label for="vibe-select">Gaya Liburan</label>
+                            <select id="vibe-select" required>
+                                <option value="santai">🧘‍♂️ Santai & Wellness (Pantai / Danau Tenang)</option>
+                                <option value="petualangan">🥾 Petualangan Alam (Trekking & Eksplorasi Pulau)</option>
+                                <option value="budaya">🏯 Warisan Budaya & Kuliner Otentik</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="duration-select">Durasi Perjalanan</label>
+                                <select id="duration-select" required>
+                                    <option value="3">3 Hari 2 Malam</option>
+                                    <option value="4">4 Hari 3 Malam</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="companion-select">Teman Perjalanan</label>
+                                <select id="companion-select" required>
+                                    <option value="Solo / Pasangan">Solo / Pasangan</option>
+                                    <option value="Keluarga">Keluarga</option>
+                                    <option value="Sahabat">Grup Sahabat</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold btn-block">
+                            ✨ Susun Jadwal Perjalanan Sekarang
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Output Box -->
+                <div class="planner-result" id="planner-result">
+                    <div class="result-header">
+                        <span class="ai-status">Siap Melayani</span>
+                        <span class="result-meta" id="result-meta">Rekomendasi Personal</span>
+                    </div>
+                    <div class="result-content" id="result-content">
+                        <div class="empty-state">
+                            <div class="empty-icon">🗺️</div>
+                            <h3>Jadwal Perjalanan Anda Muncul di Sini</h3>
+                            <p>Pilih preferensi di samping lalu klik tombol susun jadwal untuk melihat simulasi rincian kegiatan harian.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kuliner & Penginapan Lokal Section -->
+    <section id="kuliner" class="section bg-cream">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="sub-title">Gaya Hidup Berkelanjutan</span>
+                    <h2>Eco-Resort & Cita Rasa Kuliner Lokal</h2>
+                </div>
+                <p class="section-desc">Mendukung ekosistem lokal melalui penginapan ramah lingkungan dan sajian warisan kuliner khas daerah.</p>
+            </div>
+
+            <div class="experience-grid">
+                <!-- Item 1 -->
+                <div class="exp-card">
+                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=700&q=80" alt="Bambu Eco Resort" loading="lazy">
+                    <div class="exp-content">
+                        <span class="exp-badge">Eco-Stay &bull; Bali & Lombok</span>
+                        <h3>Vila Bambu Berkelanjutan</h3>
+                        <p>Menginap di hunian arsitektur bambu alami dengan energi surya dan sistem pengolahan air mandiri di tepi lembah sungai.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="exp-card">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" alt="Kuliner Rempah Nusantara" loading="lazy">
+                    <div class="exp-content">
+                        <span class="exp-badge">Gastronomi &bull; Nusantara</span>
+                        <h3>Eksplorasi Rempah & Pasar Tradisional</h3>
+                        <p>Tur mencicipi hidangan otentik langsung dari dapur tradisional warga lokal sekaligus kelas memasak berbahan organik.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="exp-card">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=700&q=80" alt="Liveaboard Phinisi" loading="lazy">
+                    <div class="exp-content">
+                        <span class="exp-badge">Bahari &bull; Flores & Papua</span>
+                        <h3>Pelayaran Kapal Kayu Phinisi</h3>
+                        <p>Pengalaman menginap di atas kapal layar warisan UNESCO buatan pengrajin Bulukumba yang ramah ekosistem terumbu karang.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#beranda" class="logo footer-logo">Kala<span>Nusantara</span>.</a>
+                    <p>Platform direktori pariwisata dan perencana perjalanan lokal yang mengedepankan kelestarian alam, pemberdayaan komunitas desa wisata, serta kenyamanan berlibur.</p>
+                    <div class="contact-list">
+                        <p>📍 Jl. Medan Merdeka Barat No. 17, Jakarta Pusat</p>
+                        <p>📞 Hotline Pemandu Lokal: +62 811-9876-5432</p>
+                        <p>✉️ halo@kalanusantara.id</p>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Destinasi Populer</h4>
+                    <ul>
+                        <li><a href="#destinasi">Labuan Bajo & Komodo</a></li>
+                        <li><a href="#destinasi">Kaldera Danau Toba</a></li>
+                        <li><a href="#destinasi">Kawasan Borobudur</a></li>
+                        <li><a href="#destinasi">Kepulauan Raja Ampat</a></li>
+                        <li><a href="#destinasi">Taman Nasional Bromo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Layanan & Informasi</h4>
+                    <ul>
+                        <li><a href="#planner">AI Travel Planner</a></li>
+                        <li><a href="#kuliner">Direktori Desa Wisata</a></li>
+                        <li><a href="#kuliner">Panduan Eco-Traveller</a></li>
+                        <li><a href="#beranda">Sertifikasi CHSE</a></li>
+                        <li><a href="#beranda">Mitra Pemandu Lokal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Jurnal Perjalanan</h4>
+                    <p>Dapatkan kurasi destinasi tersembunyi dan panduan cuaca bulanan langsung ke kotak masuk Anda.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Masukkan alamat email..." required>
+                        <button type="submit" class="btn btn-primary">Langganan</button>
+                    </form>
+                    <p class="newsletter-msg" id="newsletter-msg"></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 KalaNusantara — Lomba Web Design with Gemini AI. Hak Cipta Dilindungi.</p>
+                <div class="legal-links">
+                    <a href="#beranda">Kebijakan Privasi</a>
+                    <a href="#beranda">Syarat & Ketentuan</a>
+                    <a href="#beranda">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
